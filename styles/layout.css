@@ -48,10 +48,5 @@ main {
     border-radius: 0.75rem;
     margin-right: 1.25rem;
     background-color: var(--shape-body);
-
-    h1 {
-      font: var(--heading-md);
-      color: var(--heading-md);
-    }
   }
 }
