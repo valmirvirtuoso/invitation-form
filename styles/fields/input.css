@@ -9,6 +9,7 @@ select {
   background-color: var(--input-base);
   padding: 1rem;
   font: var(----body-mb);
+  color: var(--text-body);
 }
 
 label {
