@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de convite</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img src="assets/Logo.svg" alt="Logo festivite" />
+            <h2>Festivite</h2>
+            <p>Crie um convite digital para o seu evento</p>
+          </header>
+
+          <img
+            src="assets/Background.png"
+            alt="Foto de um bolo de aniversário com uma vela"
+          />
+        </div>
+      </aside>
+
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
+
+          <form>
+            <fieldset id="about-event">
+              <legend class="flex">
+                <img
+                  src="assets/icons/calendar.svg"
+                  alt="Ícone de calendario"
+                />
+                <span>Sobre o evento</span>
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="event-name">Título</label>
+                <input
+                  type="text"
+                  id="event-name"
+                  required
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="grid grid-cols-2 gap-16">
+                <div class="input-wrapper">
+                  <label for="start-date">ínicio</label>
+                  <input type="datetime-local" id="start-date" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="end-date">Fim</label>
+                  <input type="datetime-local" id="end-date" />
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="5"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
