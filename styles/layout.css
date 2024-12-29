@@ -1,13 +1,14 @@
 #app {
   display: grid;
   grid-template-columns: 31.25% 68.75%;
-  gap: 1.25rem;
   height: 100vh;
   overflow: hidden;
-  padding: 1.25rem;
 }
 
 aside {
+  padding: 1.25rem;
+  padding-right: 0px;
+
   & .aside-container {
     position: relative;
     border-radius: 0.75rem;
@@ -42,11 +43,11 @@ aside {
 
 main {
   overflow: auto;
+  padding: 1.25rem;
 
   & .main-container {
     padding: 5rem 8.125rem;
     border-radius: 0.75rem;
-    margin-right: 1.25rem;
     background-color: var(--shape-body);
   }
 }
