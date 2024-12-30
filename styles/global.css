@@ -72,6 +72,14 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-cols-style {
+  grid-template-columns: 176px 1fr;
+}
+
 .gap-16 {
   gap: 1rem;
+}
+
+.mt-28 {
+  margin-bottom: 1.75rem;
 }

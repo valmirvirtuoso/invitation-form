@@ -1,0 +1,54 @@
+.switch-inner {
+  width: 4rem;
+  height: 2rem;
+  position: relative;
+  border-radius: 999px;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-background);
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--input-stroke);
+    transition: transform 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(10%, -50%);
+  }
+
+  &::after {
+    content: "Escuro";
+    position: absolute;
+    top: 50%;
+    left: 140%;
+    transform: translate(-10%, -50%);
+  }
+
+  &:has(:checked) {
+    background-color: var(--brand-light);
+
+    .ball {
+      left: 20%;
+      background-color: white;
+      transform: translate(100%, -50%);
+    }
+
+    &::after {
+      content: "Claro";
+      position: absolute;
+      top: 50%;
+      left: 140%;
+      transform: translate(-10%, -50%);
+    }
+  }
+}
