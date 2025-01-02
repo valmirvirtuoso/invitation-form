@@ -1,4 +1,5 @@
 @import url(fields/index.css);
+@import url(footer.css);
 
 form {
   max-width: 35rem;

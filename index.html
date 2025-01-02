@@ -29,11 +29,6 @@
             <h2>Festivite</h2>
             <p>Crie um convite digital para o seu evento</p>
           </header>
-
-          <img
-            src="assets/Background.png"
-            alt="Foto de um bolo de aniversário com uma vela"
-          />
         </div>
       </aside>
 
@@ -58,17 +53,71 @@
                   required
                   placeholder="Nome do evento"
                 />
+                <div class="error">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <span>Insira um e-mail válido</span>
+                </div>
               </div>
 
               <div class="grid grid-cols-2 gap-16">
                 <div class="input-wrapper">
                   <label for="start-date">ínicio</label>
-                  <input type="datetime-local" id="start-date" />
+                  <input type="datetime-local" id="start-date" required />
+                  <div class="error">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <span>Insira uma data válida</span>
+                  </div>
                 </div>
 
                 <div class="input-wrapper">
                   <label for="end-date">Fim</label>
-                  <input type="datetime-local" id="end-date" />
+                  <input type="datetime-local" id="end-date" required />
+                  <div class="error">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <span>Insira uma data válida</span>
+                  </div>
                 </div>
               </div>
 
@@ -371,12 +420,153 @@
                   </div>
                 </div>
 
-                <div class="input-wrapper">
-                  <label for="foto-capa">Foto de capa</label>
-                  <input type="file" name="foto-capa" id="foto-capa" />
+                <div class="dropzone">
+                  <label>Foto de Capa</label>
+                  <label for="foto-perfil">
+                    <div>
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.2929 3.29289C15.6834 2.90237 16.3166 2.90237 16.7071 3.29289L23.3738 9.95956C23.7643 10.3501 23.7643 10.9832 23.3738 11.3738C22.9832 11.7643 22.3501 11.7643 21.9596 11.3738L17 6.41421V20C17 20.5523 16.5523 21 16 21C15.4477 21 15 20.5523 15 20V6.41421L10.0404 11.3738C9.64992 11.7643 9.01675 11.7643 8.62623 11.3738C8.2357 10.9832 8.2357 10.3501 8.62623 9.95956L15.2929 3.29289ZM4 19C4.55228 19 5 19.4477 5 20V25.3333C5 25.7754 5.17559 26.1993 5.48816 26.5118C5.80072 26.8244 6.22464 27 6.66667 27H25.3333C25.7754 27 26.1993 26.8244 26.5118 26.5118C26.8244 26.1993 27 25.7754 27 25.3333V20C27 19.4477 27.4477 19 28 19C28.5523 19 29 19.4477 29 20V25.3333C29 26.3058 28.6137 27.2384 27.9261 27.9261C27.2384 28.6137 26.3058 29 25.3333 29H6.66667C5.69421 29 4.76157 28.6137 4.07394 27.9261C3.38631 27.2384 3 26.3058 3 25.3333V20C3 19.4477 3.44772 19 4 19Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <span>Selecionar</span>
+                    </div>
+                    <input
+                      type="file"
+                      name="foto-perfil"
+                      id="foto-perfil"
+                      accept=".doc"
+                      required
+                    />
+                  </label>
                 </div>
               </div>
             </fieldset>
+
+            <fieldset id="contact">
+              <legend class="flex">
+                <img src="assets/icons/contact.svg" alt="ícone de uma agenda" />
+                <span>Dados para contato</span>
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Nome</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  required
+                  placeholder="Nome completo"
+                />
+                <div class="error">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <span>Insira um nome</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-16">
+                <div class="input-wrapper">
+                  <label for="E-mail">E-mail</label>
+                  <input
+                    type="email"
+                    id="E-mail"
+                    placeholder="exemplo@mail.com"
+                    required
+                  />
+                  <div class="error">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <span>Insira um e-mail válido</span>
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="tel">Telefone</label>
+                  <input type="text" id="tel" placeholder="(99) 99999-9999" />
+                </div>
+              </div>
+            </fieldset>
+
+            <footer class="terms-wrapper">
+              <div class="checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input
+                  type="checkbox"
+                  name="termos-politica"
+                  id="termos-politica"
+                />
+                <label for="termos-politica"
+                  >Li e concordo com os <span>Termos e Condições</span> e com a
+                  <span>Política de Privacidade</span></label
+                >
+              </div>
+
+              <div class="checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input
+                  type="checkbox"
+                  name="atualizacoes-email"
+                  id="atualizacoes-email"
+                />
+                <label for="atualizacoes-email"
+                  >Aceito receber atualizações e promoções por e-mail</label
+                >
+              </div>
+
+              <div class="checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input
+                  type="checkbox"
+                  name="atualizacoes-sms"
+                  id="atualizacoes-sms"
+                />
+                <label for="atualizacoes-sms"
+                  >Aceito receber atualizações e promoções por SMS</label
+                >
+              </div>
+
+              <div class="actions">
+                <button>
+                  <img src="assets/icons/ticket.svg" alt="Ícone de ticket" />
+                  <span>Gerar convite</span>
+                </button>
+              </div>
+            </footer>
           </form>
         </div>
       </main>

@@ -40,7 +40,7 @@
     .ball {
       left: 20%;
       background-color: white;
-      transform: translate(100%, -50%);
+      transform: translate(90%, -50%);
     }
 
     &::after {

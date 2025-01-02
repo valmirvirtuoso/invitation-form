@@ -2,48 +2,41 @@
   display: grid;
   grid-template-columns: 31.25% 68.75%;
   height: 100vh;
+  gap: 1.25rem;
+  padding: 1.25rem;
   overflow: hidden;
 }
 
 aside {
-  padding: 1.25rem;
-  padding-right: 0px;
+  border-radius: 0.75rem;
+  background-image: url(../assets/Background.png); // Aqui coloca o caminho da sua imagem
+  background-position: center;
+  background-size: cover;
 
-  & .aside-container {
+  .aside-container {
+    display: grid;
     position: relative;
+    padding: 2rem 2rem 0 2rem;
     border-radius: 0.75rem;
 
-    header {
-      position: absolute;
-      padding: 2rem;
-
-      img {
-        width: 2.86rem;
-        height: 3rem;
-        object-fit: cover;
-        margin-bottom: 1rem;
-      }
-
-      h2 {
-        font: var(--logo);
-        color: var(--pink);
-      }
-
-      p {
-        font: var(--body-mb);
-        color: var(--text-heading);
-      }
+    & img:first-child {
+      width: 2.8125rem;
+      height: 3rem;
     }
 
-    & img {
-      border-radius: 0.75rem;
+    & h2 {
+      font: var(--logo);
+      color: var(--pink);
+    }
+    & p {
+      font: var(--body-mb);
+      color: var(--text-heading);
     }
   }
 }
 
 main {
   overflow: auto;
-  padding: 1.25rem;
 
   & .main-container {
     padding: 5rem 8.125rem;
